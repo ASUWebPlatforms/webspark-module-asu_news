@@ -4,21 +4,18 @@ dependencies:
   module:
     - block_content
     - options
-id: block_content.field_news_items_to_display
-field_name: field_news_items_to_display
+id: block_content.field_display
+field_name: field_display
 entity_type: block_content
 type: list_string
 settings:
   allowed_values:
     -
-      value: All
-      label: All
+      value: Cards
+      label: Cards
     -
-      value: Three
-      label: Three
-    -
-      value: ThreeCards
-      label: 'Three Cards'
+      value: horizontal
+      label: Horizontal
   allowed_values_function: ''
 module: options
 locked: false

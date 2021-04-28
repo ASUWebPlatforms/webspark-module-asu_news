@@ -3,35 +3,57 @@ status: true
 dependencies:
   config:
     - block_content.type.news
+    - field.field.block_content.news.field_anchor
+    - field.field.block_content.news.field_display
+    - field.field.block_content.news.field_icon
     - field.field.block_content.news.field_news_feed_filter
     - field.field.block_content.news.field_news_items_to_display
-_core:
-  default_config_hash: JWv2SjHek8mOLMW3jaBmIgBv_FylkZqt6Gzaf1HBDCk
+  module:
+    - fontawesome
+    - options
 id: block_content.news.default
 targetEntityType: block_content
 bundle: news
 mode: default
 content:
-  field_news_feed_filter:
-    weight: 26
+  field_anchor:
+    weight: 2
+    label: hidden
     settings:
-      size: 60
-      placeholder: ''
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: boolean
     region: content
-  field_news_items_to_display:
-    weight: 27
+  field_display:
+    weight: 4
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: list_key
     region: content
-  info:
-    type: string_textfield
-    weight: -5
-    region: content
+  field_icon:
+    weight: 3
+    label: hidden
     settings:
-      size: 60
-      placeholder: ''
+      layers: false
+    third_party_settings: {  }
+    type: fontawesome_icon_formatter
+    region: content
+  field_news_feed_filter:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_news_items_to_display:
+    type: list_key
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }
