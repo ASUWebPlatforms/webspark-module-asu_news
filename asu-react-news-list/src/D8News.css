@@ -1,0 +1,86 @@
+
+.D8News button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    height: 100%;
+}
+.D8News .card-body,
+.D8News .card-tags {
+  text-align:left;
+}
+.D8News .card-tags a,
+.D8News .card-tags span {
+  text-align:left;
+  margin-right:4px;
+  margin-bottom:4px;
+}
+.D8News .card-tags {
+  display:none;
+}
+
+/* List view styles */
+
+.list-view.card-body {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100%;
+  max-width: 75%;
+}
+
+.text-muted {
+  font-size: 60%;
+}
+
+.list-view.card-title {
+  padding: 30px;
+  position: relative;
+  right: 80px;
+  background-color: white;
+  max-height: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+  .list-view.card-title {
+    padding: 10px;
+    right: 0;
+    background-color: white;
+    max-height: 100%;
+    font-size: 100%;
+    text-align: left;
+  }
+
+
+
+}
+
+/* loading animation */
+
+.loader {
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* Error message */
+.errorContainer{
+  text-align: center;
+  padding: 45px;
+}
+
+.errorIcon{
+  width: 75px;
+  padding-bottom: 18px;
+}
+
+.errorTitle{
+  color: #eeeeee;
+}
+
+.errorCode{
+  color: #eeeeee;
+}
