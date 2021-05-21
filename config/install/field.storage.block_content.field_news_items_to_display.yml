@@ -16,9 +16,6 @@ settings:
     -
       value: Three
       label: Three
-    -
-      value: ThreeCards
-      label: 'Three Cards'
   allowed_values_function: ''
 module: options
 locked: false
