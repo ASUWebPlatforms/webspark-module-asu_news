@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - block_content.type.news
-    - field.field.block_content.news.field_archon_menu_settings
+    - field.field.block_content.news.field_anchor_menu_settings
     - field.field.block_content.news.field_display
     - field.field.block_content.news.field_news_feed_filter
     - field.field.block_content.news.field_news_items_to_display
@@ -17,7 +17,7 @@ targetEntityType: block_content
 bundle: news
 mode: default
 content:
-  field_archon_menu_settings:
+  field_anchor_menu_settings:
     weight: 5
     label: above
     settings:
