@@ -3,23 +3,39 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
     "axios": "^0.18.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "node-sass": "^6.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-loader-spinner": "^2.1.0",
     "react-reveal": "^1.2.2",
-    "react-scripts": "1.1.4",
-    "reactstrap": "^6.1.0"
+    "react-scripts": "4.0.3",
+    "reactstrap": "^6.1.0",
+    "sass-loader": "^11.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "drupal": "react-app-rewired build && yarn run drupal:dist",
-    "drupal:dist": "cd build && cp static/js/*.js ../../js/clas_news_react.min.js && cp static/css/*.css ../../css/clas_news.css",
+    "drupal": "react-app-rewired build --scripts-version react-scripts && yarn run drupal:dist",
+    "drupal:dist": "./build-for-drupal.sh",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "react-app-rewired": "^1.5.2"
+    "react-app-rewired": "^2.1.8"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
