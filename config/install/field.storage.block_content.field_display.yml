@@ -14,8 +14,11 @@ settings:
       value: Cards
       label: Cards
     -
-      value: horizontal
+      value: Horizontal
       label: Horizontal
+    -
+      value: Carousel
+      label: Carousel
   allowed_values_function: ''
 module: options
 locked: false

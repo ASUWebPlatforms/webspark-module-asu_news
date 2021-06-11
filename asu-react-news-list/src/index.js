@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { h } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import NewsDisplay from "./NewsDisplay";
 import D8News from './D8News';
+
 
 let appRoots = document.getElementsByClassName('clas-news-react-base');
 
 for (let element of appRoots) {
-  ReactDOM.render(<D8News dataFromPage={element.dataset} />, element);
+  ReactDOM.render(<NewsDisplay data={element.dataset} />, element);
 }
 
 var pageCount = 0;
@@ -22,6 +24,5 @@ window.onscroll = function() {
     if(nextPage != null) {
       ReactDOM.render(<D8News dataFromPage={nextPage.dataset} />, nextPage);
     }
-
   }
 }

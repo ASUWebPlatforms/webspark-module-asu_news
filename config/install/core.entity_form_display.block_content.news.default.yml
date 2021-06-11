@@ -5,6 +5,7 @@ dependencies:
     - block_content.type.news
     - field.field.block_content.news.field_anchor_menu_settings
     - field.field.block_content.news.field_display
+    - field.field.block_content.news.field_heading
     - field.field.block_content.news.field_news_feed_filter
     - field.field.block_content.news.field_news_items_to_display
     - field.field.block_content.news.field_spacing_bottom
@@ -20,7 +21,7 @@ third_party_settings:
         - field_spacing_top
         - field_spacing_bottom
       parent_name: ''
-      weight: 6
+      weight: 5
       format_type: tab
       region: content
       format_settings:
@@ -48,25 +49,34 @@ content:
     type: entity_reference_paragraphs
     region: content
   field_display:
-    weight: 5
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
+  field_heading:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_news_feed_filter:
     type: string_textfield
-    weight: 3
+    weight: 2
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   field_news_items_to_display:
-    type: options_select
     weight: 4
-    region: content
-    settings: {  }
+    settings:
+      placeholder: ''
     third_party_settings: {  }
+    type: number
+    region: content
   field_spacing_bottom:
     weight: 28
     settings: {  }
