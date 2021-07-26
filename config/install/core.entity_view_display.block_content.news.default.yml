@@ -4,8 +4,11 @@ dependencies:
   config:
     - block_content.type.news
     - field.field.block_content.news.field_anchor_menu_settings
+    - field.field.block_content.news.field_card_cta_color
     - field.field.block_content.news.field_display
+    - field.field.block_content.news.field_header_cta_color
     - field.field.block_content.news.field_heading
+    - field.field.block_content.news.field_heading_text_color
     - field.field.block_content.news.field_news_feed_filter
     - field.field.block_content.news.field_news_items_to_display
     - field.field.block_content.news.field_news_link
@@ -29,8 +32,22 @@ content:
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
     region: content
+  field_card_cta_color:
+    weight: 11
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
   field_display:
     weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_header_cta_color:
+    weight: 10
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -43,6 +60,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_heading_text_color:
+    weight: 12
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
     region: content
   field_news_feed_filter:
     type: string
@@ -63,7 +87,7 @@ content:
     region: content
   field_news_link:
     weight: 8
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
