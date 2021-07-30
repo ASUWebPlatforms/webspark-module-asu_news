@@ -9,5 +9,6 @@
       "email": "daniela.duarte@deptagency.com"
     }
   ],
-  "require": {}
+  "require": {},
+  "version": "1.0.2"
 }
