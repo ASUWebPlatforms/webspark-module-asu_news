@@ -18,10 +18,10 @@ settings:
       label: Maroon
     -
       value: gray
-      label: Gray
+      label: 'Gray 4'
     -
       value: dark
-      label: Black
+      label: 'Gray 7'
   allowed_values_function: ''
 module: options
 locked: false
