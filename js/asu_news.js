@@ -20,6 +20,8 @@
                 ctaButton: newsData.ctaButton,
                 dataSource: newsData.dataSource,
                 maxItems: newsData.maxItems,
+                cardButton: newsData.cardButton,
+
               },
             });
             break;
@@ -31,6 +33,7 @@
                 ctaButton: newsData.ctaButton,
                 dataSource: newsData.dataSource,
                 maxItems: newsData.maxItems,
+                cardButton: newsData.cardButton,
               },
             });
             break;
@@ -42,11 +45,13 @@
                 ctaButton: newsData.ctaButton,
                 dataSource: newsData.dataSource,
                 maxItems: newsData.maxItems,
+                cardButton: newsData.cardButton,
+
               },
             });
 
         }
-        //delete settings.asu.components.asu_news[newsId];
+        delete settings.asu.components.asu_news[newsId];
       }
     }
   };
