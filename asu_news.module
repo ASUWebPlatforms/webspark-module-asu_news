@@ -42,6 +42,10 @@ function asu_news_preprocess_block(&$variables) {
       $news_block->display = $block->field_display->value;
     }
     $news_block->dataSource->url = '/asu-news-feed/';
+    if ($block->field_feed_taxonomy_term->value) {
+      // Allow only alphanumeric characters and underscore.
+      $news_block->dataSource->url .= preg_replace('/[^A-Za-z0-9\_]/', '', $block->field_feed_taxonomy_term->value);
+    }
     if ($block->field_news_feed_filter->value) {
       $news_block->dataSource->filters = $block->field_news_feed_filter->value;
     }

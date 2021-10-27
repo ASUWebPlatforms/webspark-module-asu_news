@@ -6,6 +6,7 @@ dependencies:
     - field.field.block_content.news.field_anchor_menu_settings
     - field.field.block_content.news.field_card_cta_color
     - field.field.block_content.news.field_display
+    - field.field.block_content.news.field_feed_taxonomy_term
     - field.field.block_content.news.field_header_cta_color
     - field.field.block_content.news.field_heading
     - field.field.block_content.news.field_heading_text_color
@@ -26,7 +27,7 @@ third_party_settings:
         - field_spacing_top
         - field_spacing_bottom
       parent_name: ''
-      weight: 9
+      weight: 10
       format_type: tab
       region: content
       format_settings:
@@ -54,24 +55,18 @@ content:
     type: entity_reference_paragraphs
     region: content
   field_card_cta_color:
-    weight: 5
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_display:
     weight: 7
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
-  field_header_cta_color:
-    weight: 4
+  field_display:
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
-  field_heading:
+  field_feed_taxonomy_term:
     weight: 1
     settings:
       size: 60
@@ -79,29 +74,43 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_header_cta_color:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_heading:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_heading_text_color:
-    weight: 2
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_news_feed_filter:
     type: string_textfield
-    weight: 6
+    weight: 2
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   field_news_items_to_display:
-    weight: 8
+    weight: 9
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_news_link:
-    weight: 3
+    weight: 5
     settings:
       placeholder_url: ''
       placeholder_title: ''
