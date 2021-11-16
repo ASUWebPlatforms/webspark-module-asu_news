@@ -13,7 +13,7 @@ The component can be displayed like a:
 The component has no pagination but instead, there is a number of items to be displayed setting.
 
 ## Installation instructions
-The ASU React Integration module installs when you create a Webspark site.
+The ASU News module installs when you create a Webspark site.
 
 To add the news component, use the Layout builder -> Create custom block -> News.
 
