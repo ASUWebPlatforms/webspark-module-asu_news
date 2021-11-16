@@ -25,6 +25,14 @@ function asu_news_update_9002(&$sandbox) {
   _asu_news_revert_all_module_config();
 }
 
+/**
+ * Implements hook_update_N();
+ * Revert all the module config.
+ */
+function asu_news_update_9003(&$sandbox) {
+  _asu_news_revert_all_module_config();
+}
+
 function _asu_news_revert_all_module_config() {
 
   $module = \Drupal::service('module_handler')
