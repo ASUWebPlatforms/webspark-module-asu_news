@@ -19,20 +19,29 @@ function asu_news_preprocess_block(&$variables) {
     $block = $variables['content']['#block_content'];
 
     if ($block->field_heading->value) {
+      $news_block->header = new \stdClass;
       $news_block->header->text = $block->field_heading->value;
     }
     if ($block->field_heading_text_color->value) {
+      if (empty($news_block->header)) {
+        $news_block->header = new \stdClass;
+      }
       $news_block->header->color = $block->field_heading_text_color->value;
     }
     if ($block->field_news_link && $block->field_news_link->title && $block->field_news_link->uri) {
+      $news_block->ctaButton = new \stdClass;
       $news_block->ctaButton->text = $block->field_news_link->title;
       $link = Url::fromUri($block->field_news_link->uri);
       $news_block->ctaButton->url = $link->toString();
     }
     if ($block->field_header_cta_color->value) {
+      if (empty($news_block->ctaButton)) {
+        $news_block->ctaButton = new \stdClass;
+      }
       $news_block->ctaButton->color = $block->field_header_cta_color->value;
     }
     if ($block->field_card_cta_color->value) {
+      $news_block->cardButton = new \stdClass;
       $news_block->cardButton->color = $block->field_card_cta_color->value;
     }
     if ($block->field_news_items_to_display->value) {
@@ -41,6 +50,9 @@ function asu_news_preprocess_block(&$variables) {
     if ($block->field_display->value) {
       $news_block->display = $block->field_display->value;
     }
+
+    $news_block->dataSource = new \stdClass;
+
     $news_block->dataSource->url = '/asu-news-feed/';
     if ($block->field_feed_taxonomy_term->value) {
       // Allow only alphanumeric characters and underscore.
