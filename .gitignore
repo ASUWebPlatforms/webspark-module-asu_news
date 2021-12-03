@@ -10,8 +10,3 @@ node_modules/@asu-design-system/component-news/*
 node_modules/@asu-design-system/component-news/dist/*
 !node_modules/@asu-design-system/component-news/dist/news.production.js
 !node_modules/@asu-design-system/component-news/dist/vendor.production.js
-
-!node_modules/@asu-design-system/components-library
-node_modules/@asu-design-system/components-library/*
-
-!node_modules/@asu-design-system/components-library/dist
