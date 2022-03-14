@@ -37,10 +37,10 @@
     url-loader "^4.1.1"
     webpack-node-externals "^3.0.0"
 
-"@asu-design-system/component-news@^1.2.6":
-  version "1.2.6"
-  resolved "https://registry.web.asu.edu/@asu-design-system%2fcomponent-news/-/component-news-1.2.6.tgz#4e91b3cd66efa136791b8369f8978d40d0254dd5"
-  integrity sha512-GdMV2/XJgrLvQIx3PGUKxQa1z1QXrZ4Zy6BxUAhpqWmFRoXj4VTnHZG8inLzgvFFiDhYL/+U5CxV98HGJn23Tw==
+"@asu-design-system/component-news@1.3.1":
+  version "1.3.1"
+  resolved "https://registry.web.asu.edu/@asu-design-system%2fcomponent-news/-/component-news-1.3.1.tgz#e12da1793e7507dc957a146101ebda135e6ffc23"
+  integrity sha512-Xj5kTLnIW/DQcNTqcrdCgiKgE59hh9iHwisfhEE9vN207KZwZpw6uCwyAX+18L6g4KkD7UjgOuGeNkmDLdcAAw==
   dependencies:
     "@asu-design-system/component-carousel" "^1.8.3"
     "@asu-design-system/components-core" "^1.0.0"
