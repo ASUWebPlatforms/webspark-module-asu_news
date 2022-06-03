@@ -3,6 +3,7 @@
 namespace Drupal\asu_news\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
+use GuzzleHttp\Exception\RequestException;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 /**
