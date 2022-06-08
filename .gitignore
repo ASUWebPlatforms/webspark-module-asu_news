@@ -12,3 +12,4 @@ node_modules/@asu-design-system/component-news/dist/*
 !node_modules/@asu-design-system/component-news/dist/vendor.production.js
 !node_modules/@asu-design-system/component-news/dist/asuNews.umd.js
 !node_modules/@asu-design-system/component-news/dist/vendor.umd.js
+.idea/
