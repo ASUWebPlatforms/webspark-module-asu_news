@@ -37,13 +37,13 @@
     url-loader "^4.1.1"
     webpack-node-externals "^3.0.0"
 
-"@asu-design-system/component-news@1.3.1":
-  version "1.3.1"
-  resolved "https://registry.web.asu.edu/@asu-design-system%2fcomponent-news/-/component-news-1.3.1.tgz#e12da1793e7507dc957a146101ebda135e6ffc23"
-  integrity sha512-Xj5kTLnIW/DQcNTqcrdCgiKgE59hh9iHwisfhEE9vN207KZwZpw6uCwyAX+18L6g4KkD7UjgOuGeNkmDLdcAAw==
+"@asu-design-system/component-news@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.web.asu.edu/@asu-design-system%2fcomponent-news/-/component-news-1.4.0.tgz#522856b493a29acb8d8d4368c39c9bdc5c874342"
+  integrity sha512-PFxWycAqKVxSfWRabrtCBMj9jAs6fWYQa8y8buwisoZmUS/vcM5skeCKqG0zWlVn7Y/mYbJFWZFl8L0ogSk7Yg==
   dependencies:
     "@asu-design-system/component-carousel" "^1.8.3"
-    "@asu-design-system/components-core" "^1.0.0"
+    "@asu-design-system/components-core" "^1.25.2"
     "@babel/preset-env" "^7.15.0"
     "@babel/preset-react" "^7.14.5"
     prop-types "^15.7.2"
@@ -73,6 +73,19 @@
     react-router-dom "^5.2.0"
     react-share "^4.4.0"
     reactstrap "^8.9.0"
+
+"@asu-design-system/components-core@^1.25.2":
+  version "1.25.2"
+  resolved "https://registry.web.asu.edu/@asu-design-system%2fcomponents-core/-/components-core-1.25.2.tgz#b62e65758e53b048d80ea9a88b2e9977de378d1a"
+  integrity sha512-pEyHKsJfMKhLL/7SBUjNh4svwXtla7TsI7uluIc1s79t1DWXqcOR5Md1XwKN5KBx6y68cCJilE2fbbweYE5Jmg==
+  dependencies:
+    "@storybook/addon-knobs" "^6.2.9"
+    classnames "^2.2.6"
+    date-fns "^2.19.0"
+    dompurify "^2.2.7"
+    phone-fns "^3.2.3"
+    prop-types "^15.7.2"
+    styled-components "^5.3.0"
 
 "@asu-design-system/design-tokens@^1.1.0":
   version "1.1.8"
@@ -1660,7 +1673,7 @@
     regenerator-runtime "^0.13.7"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-knobs@^6.1.15":
+"@storybook/addon-knobs@^6.1.15", "@storybook/addon-knobs@^6.2.9":
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-6.4.0.tgz#fa5943ef21826cdc2e20ded74edfdf5a6dc71dcf"
   integrity sha512-DiH1/5e2AFHoHrncl1qLu18ZHPHzRMMPvOLFz8AWvvmc+VCqTdIaE+tdxKr3e8rYylKllibgvDOzrLjfTNjF+Q==
