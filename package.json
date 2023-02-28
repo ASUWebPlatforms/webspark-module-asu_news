@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "@asu-design-system/component-news": "1.4.0"
+    "@asu/component-news": "1.1.2"
   }
 }
